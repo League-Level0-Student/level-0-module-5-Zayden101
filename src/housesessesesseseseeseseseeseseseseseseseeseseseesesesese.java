@@ -12,7 +12,9 @@ public static void main(String[] args) {
 	
 	a.miniaturize();
 	a.setSpeed(99999);
-	a.turn(270);
+	a.turn(180);
+	a.move(150);
+	a.turn(90);
 	a.move(500);
 	a.penDown();
 
@@ -21,17 +23,16 @@ for (int i = 0; i < 20; i++) {
 	drawhouse(height);
 
 }
-for (int e = 0; e < 550; e++) {
+for (int e = 0; e < 250; e++) {
 	
 
 a.setPenColor(0, 200, 0);
+a.move(1000);
 a.turn(-90);
-a.move(300);
-a.turn(90);
 a.move(2);
-a.turn(90);
-a.move(300);
 a.turn(-90);
+a.move(1000);
+a.turn(-180);
 }
 }
 static void drawhouse(int hight) {

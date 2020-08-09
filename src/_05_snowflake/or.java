@@ -21,7 +21,7 @@ String q=JOptionPane.showInputDialog(null, "WHAT SHAPE DO YOU WANT TO DRAW!!!!!!
 	
 	if (q.equals("square")) {
 		square();
-	}
+	}  
 	if (q.equals("triangle")) {
 		triangle();
 	}

@@ -7,6 +7,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class housesessesesseseseeseseseeseseseseseseseeseseseesesesese {
 static Robot a=new Robot();
 static Random rand = new Random();
+static Random random = new Random();
 public static void main(String[] args) {
 
 	
@@ -75,9 +76,11 @@ drawpointyroof();
 	
 a.move(20);	
 a.turn(180);
-a.setRandomPenColor();
-}
 
+
+		a.setRandomPenColor();
+
+}
 static void drawflatroof() {
 	a.turn(90);
 	a.move(25);

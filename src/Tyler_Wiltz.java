@@ -85,5 +85,7 @@ public static void main(String[] args) {
 	if (q.equals("Sponge bob square Wiltz")) {
 		JOptionPane.showMessageDialog(null, "you ate a crabby patty with patrick inside");
 	}
+	
+	
 }
 }

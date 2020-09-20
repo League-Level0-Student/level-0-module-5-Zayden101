@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	
 	JOptionPane.showMessageDialog(null, "chose a tyler");
 	
-	String q=JOptionPane.showInputDialog("Tyler Wiltz, Plant Wiltz, Movie Wiltz, TV Wiltz, Bike Wiltz, Iphone X Wiltz, Toilet Wiltz, Zoom WIltz, Wiltz Tyler, Small brain Wiltz, Big brain Wiltz, Dark knight Wiltz, Ugly Wiltz, E Wiltz, Old Wiltz, Potato Wiltz, Lonly Wiltz, Break Wiltz, Sponge bob square Wiltz, Diper Wiltz, Edible Witlz, Wiltz, Snow boarding Wiltz");
+	String q=JOptionPane.showInputDialog("Tyler Wiltz, Plant Wiltz, Movie Wiltz, TV Wiltz, Bike Wiltz, Iphone X Wiltz, Toilet Wiltz, Zoom WIltz, Wiltz Tyler, Small brain Wiltz, Big brain Wiltz, Dark knight Wiltz, Ugly Wiltz, E Wiltz, Old Wiltz, Potato Wiltz, Lonly Wiltz, Break Wiltz, Sponge bob square Wiltz, Diper Wiltz, Edible Witlz, Wiltz, Snow boarding Wiltz, Pirat Wiltz");
 	
 	if (q.equals("Tyler Wiltz")) {
 		JOptionPane.showMessageDialog(null, "you have chosen incorrectly");
@@ -97,6 +97,8 @@ public static void main(String[] args) {
 	if (q.equals("Snow boarding Wiltz")) {
 		JOptionPane.showMessageDialog(null, "you were snow boarding and got hit by an alagator");
 	}
-	
+	if (q.equals("Pirat Wiltz")) {
+		JOptionPane.showMessageDialog(null, "You have to be the best pirat ive ever seen");
+	}
 }
 }

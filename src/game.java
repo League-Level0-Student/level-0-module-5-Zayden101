@@ -35,11 +35,12 @@ public static void main(String[] args) {
 		player.miniaturize();
 	}
 	
+
 	JOptionPane.showMessageDialog(null, "you have 50 moves to make something");
 	JOptionPane.showMessageDialog(null, "type done while moving if you are done drawing but you havent used all moves");
 	for (int i = 0; i < 50; i++) {
 		
-	String move=JOptionPane.showInputDialog("up, down, right, left?");
+	String move=JOptionPane.showInputDialog("up, down, right, left, big up, big down, big right, big left?");
 	
 	if (move .equals("up")) {
 		player.move(50);
@@ -57,6 +58,24 @@ public static void main(String[] args) {
 	if (move.equals("left")) {
 		player.turn(-90);
 		player.move(50);
+		player.turn(90);
+	}
+	if (move .equals("big up")) {
+		player.move(100);
+	}
+	if (move.equals("big right")) {
+		player.turn(90);
+		player.move(100);
+		player.turn(-90);
+	}
+	if (move.equals("big down")) {
+		player.turn(180);
+		player.move(100);
+		player.turn(-180);
+	}
+	if (move.equals("big left")) {
+		player.turn(-90);
+		player.move(100);
 		player.turn(90);
 	}
 	if (move.equals("color")) {

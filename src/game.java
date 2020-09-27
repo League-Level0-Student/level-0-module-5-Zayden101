@@ -6,15 +6,35 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class game {
 public static void main(String[] args) {
+	boolean usedPowerup = false;
 	Robot player = new Robot();
 	player.setSpeed(5);
 	player.penDown();
 	player.setWindowSize(4000, 1000);
 
-	String line=JOptionPane.showInputDialog("chose a thickness 1-10");
+	String line=JOptionPane.showInputDialog("chose a thickness 1-15");
 	int width = Integer.parseInt(line);
 	player.setPenWidth(width);
 	
+	String speed=JOptionPane.showInputDialog("choose a speed, 5-10");
+	if (speed .equals("5")) {
+		player.setSpeed(1);
+	}
+	if (speed .equals("6")) {
+		player.setSpeed(6);
+	}
+	if (speed .equals("7")) {
+		player.setSpeed(7);
+	}
+	if (speed .equals("8")) {
+		player.setSpeed(8);
+	}
+	if (speed .equals("9")) {
+		player.setSpeed(9);
+	}
+	if (speed .equals("10")) {
+		player.setSpeed(10);
+	}
 	
 	String color=JOptionPane.showInputDialog("choose a color, red, blue, yellow, random");
 	if (color .equals("red")) {
@@ -34,8 +54,18 @@ public static void main(String[] args) {
 	if (car .equals("mini")) {
 		player.miniaturize();
 	}
-	
+	String sparkle=JOptionPane.showInputDialog("choose a car, sparkly or normal");
+	if (car .equals("sparkly")) {
+		player.sparkle();
+	}
 
+	JOptionPane.showMessageDialog(null, "type power to chose a power");
+	String j=JOptionPane.showInputDialog(null, "would you like an explaniton for the power?");
+	if (j .equals("yes")) {
+		JOptionPane.showMessageDialog(null, "Powers can be found by typing power while moving. Powers can be used ONLY ONCE, if you type power but dont chose a power, you will get no other chance to use powers");
+	
+	}
+	
 	JOptionPane.showMessageDialog(null, "you have 50 moves to make something");
 	JOptionPane.showMessageDialog(null, "type done while moving if you are done drawing but you havent used all moves");
 	for (int i = 0; i < 50; i++) {
@@ -85,8 +115,32 @@ public static void main(String[] args) {
 	if (move.equals("done")) {
 		break;
 	}
+	String p="";
+	if(usedPowerup == false) {
+		if (move.equals("power")) {
+			JOptionPane.showMessageDialog(null,"REMBER, any powers you do cannot be undone");
+			p=JOptionPane.showInputDialog("upsidedown, sideways (right), sideways (left), super speed, absloute confusion");
+			usedPowerup = true;
+		}
+	}
+	if (p.equals("upsidedown")) {
+		player.turn(180);
+	}
+	if (p.equals("sideways (right)")) {
+		player.turn(90);
+	}
+	if (p.equals("sideways (left)")) {
+		player.turn(-90);
+	}
+	if (p.equals("super speed")) {
+		player.setSpeed(99999);
+	}
+	if (p.equals("absloute confusion")) {
+		player.turn(-27);
+	}
 	}
 	JOptionPane.showMessageDialog(null, "this is what you have made");
 	
+
 }
 }

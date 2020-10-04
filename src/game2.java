@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 import org.jointheleague.graphical.robot.Robot;
 
-public class game {
+public class game2 {
 public static void main(String[] args) {
 	boolean usedPowerup = false;
 	Robot player = new Robot();
@@ -71,40 +71,40 @@ public static void main(String[] args) {
 	JOptionPane.showMessageDialog(null, "type done while moving if you are done drawing but you havent used all moves");
 	for (int i = 0; i < 50; i++) {
 		
-	String move=JOptionPane.showInputDialog("up, down, right, left, big up, big down, big right, big left, other?");
+	String move=JOptionPane.showInputDialog("w, a, s, d,ww, aa, ss, dd");
 	
-	if (move .equals("up")) {
+	if (move .equals("w")) {
 		player.move(50);
 	}
-	if (move.equals("right")) {
+	if (move.equals("d")) {
 		player.turn(90);
 		player.move(50);
 		player.turn(-90);
 	}
-	if (move.equals("down")) {
+	if (move.equals("s")) {
 		player.turn(180);
 		player.move(50);
 		player.turn(-180);
 	}
-	if (move.equals("left")) {
+	if (move.equals("a")) {
 		player.turn(-90);
 		player.move(50);
 		player.turn(90);
 	}
-	if (move .equals("big up")) {
+	if (move .equals("ww")) {
 		player.move(100);
 	}
-	if (move.equals("big right")) {
+	if (move.equals("dd")) {
 		player.turn(90);
 		player.move(100);
 		player.turn(-90);
 	}
-	if (move.equals("big down")) {
+	if (move.equals("ss")) {
 		player.turn(180);
 		player.move(100);
 		player.turn(-180);
 	}
-	if (move.equals("big left")) {
+	if (move.equals("aa")) {
 		player.turn(-90);
 		player.move(100);
 		player.turn(90);

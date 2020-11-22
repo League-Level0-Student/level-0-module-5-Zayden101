@@ -14,14 +14,15 @@ SkillPractice skills = new SkillPractice();
 void skill1() {
 // Use pop-ups for the following.
 // Ask the user how many dimes they have
-JOptionPane.showInputDialog("how many dimes do you have.");
+String o=JOptionPane.showInputDialog("how many dimes do you have.");
 
 
 
 // Tell them how many cents they have (hint multiply by 10)
 
-
-
+int chickenNugget=Integer.parseInt(o);
+int oo=chickenNugget*10;
+JOptionPane.showMessageDialog(null, oo);
 
 // Ask the user how tall they are (inches)
 String u=JOptionPane.showInputDialog("How tall are you.");
@@ -30,8 +31,9 @@ String u=JOptionPane.showInputDialog("How tall are you.");
 
 // If they are shorter than 36 inches, tell them to eat their Wheaties
 
+int tall=Integer.parseInt(u);
 
-if (u.equals("37")){
+if (tall<37){
 	JOptionPane.showMessageDialog(null, "e");
 }
 
@@ -43,8 +45,11 @@ else {
 void skill2() { // Write a loop to print every third number between 1 and 30 to the console
 
 
-
-
+for (int i = 1; i < 31; i++) {
+	if (i%3==0) {
+	System.out.println(i);
+}
+}
 
 
 
@@ -83,7 +88,7 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 
 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
 
-
+JOptionPane.showMessageDialog(null, "I eat 6 airplanes a day");
 
 // If there is 1 car, use a pop-up to display the make/model of the car
 
@@ -91,7 +96,7 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
  
-
+JOptionPane.showMessageDialog(null, "there are 18970402398 wheels bewteen them");
 
 }
 

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
@@ -57,11 +59,12 @@ for (int i = 1; i < 31; i++) {
 
 void skill3() { // Get a random number that is less than 20 and print it to the console
 
-
-
+	 Random rand = new Random();
+int e=rand.nextInt(20);
+System.out.println(e);
 // Get another random number that is less than 10 and print it to the console
-
-
+int ee=rand.nextInt(10);
+System.out.println(ee);
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
 
@@ -96,7 +99,7 @@ JOptionPane.showMessageDialog(null, "I eat 6 airplanes a day");
 
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
  
-JOptionPane.showMessageDialog(null, "there are 18970402398 wheels bewteen them");
+JOptionPane.showMessageDialog(null, "there are 18970402398 wheels on them");
 
 }
 

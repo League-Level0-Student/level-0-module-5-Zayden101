@@ -61,6 +61,7 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 
 	 Random rand = new Random();
 int e=rand.nextInt(20);
+System.out.println( );
 System.out.println(e);
 // Get another random number that is less than 10 and print it to the console
 int ee=rand.nextInt(10);
@@ -68,7 +69,7 @@ System.out.println(ee);
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction
 
-
+JOptionPane.showMessageDialog(null, e-ee);
 
 }
 
@@ -90,26 +91,33 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 	}
 
 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
+int bread=6;
+//String lp=JOptionPane.showInputDialog("how many airplanes do you eat a day");
 
-JOptionPane.showMessageDialog(null, "I eat 6 airplanes a day");
+if (bread ==0) {
+	JOptionPane.showMessageDialog(null, "poo");
+}
 
 // If there is 1 car, use a pop-up to display the make/model of the car
 
-
+if (bread ==1) {
+	JOptionPane.showMessageDialog(null, "EAT MORE AIRPLANES");
+}
 
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
- 
-JOptionPane.showMessageDialog(null, "there are 18970402398 wheels on them");
-
+if (bread > 1) {
+	JOptionPane.showMessageDialog(null, "good");
+}
 }
 
 void skill5() { // In a pop-up, ask the user for the name of their school
 
-	JOptionPane.showInputDialog("what school do u go to");
+	String ooi=JOptionPane.showInputDialog("what school do u go to");
 
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message.
 
-	JOptionPane.showMessageDialog(null, "Mc Donald dipers");
+JOptionPane.showMessageDialog(null, ooi + " Mc Donald dipers");
+
 
 }
 }

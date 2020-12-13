@@ -12,11 +12,13 @@ public class ReturnTypesRobot {
 	
 	public static void main(String[] args) {
 		//1. Call the crazyMove() method to move the robot
-		
+		crazyMove();
 		//2. Call the getTotalDistanceMethod() to get the distance the robot moved
-		
+		int o=getTotalDistance();
 		//3. If the distance is greater than 500
-			
+			if (o > (500)) {
+				JOptionPane.showMessageDialog(null, "wow");
+			}
 			//4. Tell the user "Wow! That's really far!"
 		
 		//5. Else use a pop up to say "Better luck next time."
@@ -31,10 +33,11 @@ public class ReturnTypesRobot {
 		for (int i = 0; i < numMoves; i++ ) { 
 			rob.setAngle(0);
 			if(i%2==0) {
-				rob.turn(45);
+				rob.turn(15);
+			
 			}
 			else {
-				rob.turn(-45);
+				rob.turn(-15);
 			}
 			int dist = new Random().nextInt(31);
 			rob.move(dist);

@@ -17,12 +17,14 @@ public class ReturnTypesRobot {
 		int o=getTotalDistance();
 		//3. If the distance is greater than 500
 			if (o > (500)) {
-				JOptionPane.showMessageDialog(null, "wow");
+				JOptionPane.showMessageDialog(null, "eeeeeee");
 			}
 			//4. Tell the user "Wow! That's really far!"
 		
 		//5. Else use a pop up to say "Better luck next time."
-		
+			else {
+				JOptionPane.showMessageDialog(null, "fcj es;ghvaevjg lk.shrkg");
+			}
 	}
 	
 	static void crazyMove() {
@@ -33,11 +35,11 @@ public class ReturnTypesRobot {
 		for (int i = 0; i < numMoves; i++ ) { 
 			rob.setAngle(0);
 			if(i%2==0) {
-				rob.turn(15);
+				rob.turn(45);
 			
 			}
 			else {
-				rob.turn(-15);
+				rob.turn(-45);
 			}
 			int dist = new Random().nextInt(31);
 			rob.move(dist);

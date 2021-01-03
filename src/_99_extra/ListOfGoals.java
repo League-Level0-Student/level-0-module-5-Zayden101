@@ -30,6 +30,7 @@ isManyGoals();
 			listOfGoals += input+ "\n";
 			numberOfGoals++;
 		}
+		JOptionPane.showMessageDialog(null, numberOfGoals);
 	}
 	
 	static String getListOfGoals() {
